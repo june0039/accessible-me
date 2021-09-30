@@ -45,7 +45,7 @@ img {
 }
 a:focus{
 
-  outline: 4px solid red;
+  outline: 4px solid greenyellow;
 }
 .skiplinks{
   list-style:0;
@@ -57,7 +57,7 @@ a:focus{
 
   position:absolute;
   top:-3rem;
-  background-color: blueviolet;
+  background-color: navy;
   color:white;
   padding:0.5em 1em;
   font-weight: bold;
