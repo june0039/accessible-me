@@ -67,7 +67,7 @@ a:focus{
   top:0;
 }
 
-.top a{
+ a{
   position: relative;
   background-color: navy;
   color:white;
