@@ -11,16 +11,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
-
+<header role="banner">
 <body>
   <div class="container" id="top">
     <ul class="skiplinks">
-      <li><a href="#nav">Skip to main nav</a></li>
-      <li><a href="#main">Skip to main content</a></li>
+      <li><a href="#nav" aria-label="Brings user to navigation menu">Skip to main nav</a></li>
+      <li><a href="#main" aria-label="Brings user to main section of article">Skip to main content</a></li>
   </ul>
     <div class="site-header">
-      <h1>Jam Box Studios</h1>
-      <div class="main-nav" nav id="nav">
+      <h1 role="heading">Jam Box Studios</h1>
+      <div class="main-nav" nav id="nav" role="naigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -28,21 +28,23 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </div>
+      </header>
+     <main id="main" role="main">
       <img src="https://placekitten.com/1200/900" class="banner" alt="Cat walking in the snow">
     </div>
-    <div class="main-content" main id="main">
-      <h1>Welcome to Jam Box</h1>
+    <div class="main-content">
+      <h1 role="heading">Welcome to Jam Box</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <div class="owner">
-        <h1>Meet the owner</h1>
+        <h1 role="heading">Meet the owner</h1>
         <ul>
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
           <li>Email: johnjoe@jambox.ca</li>
           <li>Phone: 613-000-0000</li>
         </ul>
-        <h1>Address</h1>
+        <h1 role="heading">Address</h1>
         <p>
           Jambox Studios
           123 Guitar Road,
@@ -50,23 +52,25 @@
           B3T 0L0
         </p>
       </div>
+    
       <div class="contact-section">
-        <h1>Contact Us</h1>
+        <h1 role="heading">Contact Us</h1>
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <label>Email</label>
-          <input type="text" placeholder="Email">
-          <label>Text</label>
-          <input type="text" placeholder="Subject">
-          <label>Your Message</label>
-          <textarea></textarea>
+          <label for="yourname">Full Name</label>
+          <input type="text" name="fullname" id="yourname" placeholder="Full Name">
+          <label for="youremail">Email</label>
+          <input type="email" name="email" id="youremail" placeholder="Email">
+          <label for="yourtext">Text</label>
+          <input type="text" name="text" id="yourtext" placeholder="Subject">
+          <label for="yourmessage">Your Message</label>
+          <textarea name="message" id="yourmessage"></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
+      </main>
     </div>
-    <div class="site-footer">
-      &copy; 2021 Jam Box Studios  <a href="#top">Back to Top</a>
+    <div class="site-footer" role="footer">
+      &copy; 2021 Jam Box Studios  <a href="#top" aria-label="Brings user to top of page">Back to Top</a>
     </div>
   </div>
 </body>
