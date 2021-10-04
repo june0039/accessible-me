@@ -49,7 +49,7 @@ a:focus{
   outline: 4px solid greenyellow;
 }
 .skiplinks {
-  list-style:0;
+  list-style:none;
   margin:0;
   padding:0;
 }
